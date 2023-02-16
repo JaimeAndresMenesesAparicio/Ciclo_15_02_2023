@@ -1,13 +1,12 @@
-// Pedir un numero al usuario y ver 
-// la tabala de multiplicar
-// anteriores al numero digitado
-// Ejemplo  Usuario = 3
-// Tabla 1, Tabla 2, Tabla 3
 
-let num = Number(prompt("Usuario ingrese un número para multiplicar"))
-for (let a = 1; a<= num; a++ ){
-    console.log(`Tabla del ${a}`);
-for (let i = 1; i<= 10; i++){
-    console.log(`${a} X ${i} = ${a*i}`);
+fin = 0, precio=0;
+
+for (i = 1; i >= fin ; i++){
+    let num = Number(prompt("Usuario ingrese el precio del medicamento:"));
+    precio = precio + num;
+    let n = Number(prompt("Desea continuar: Si: 1/No: 0"));
+    if(n == 1){i = 0 }
+    else{break;}
 }
-}
+console.log(`El descuento es: ${precio*0.10}`);
+console.log(`El total a cancelar es: ${precio}`);
